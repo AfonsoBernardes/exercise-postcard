@@ -1,11 +1,15 @@
 body {
 	background: black;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
 }
 
+/*
 * {
 	border: 1px dashed red;
 	min-height: 10px;
 }
+*/
 
 .postcard {
 	background: white;
@@ -16,6 +20,8 @@ body {
 
 .postcard-header {
 	display: flex;
+	margin: 0px;
+	padding-top: 10px;
 }
 
 .postcard-header img {
@@ -26,4 +32,38 @@ body {
 .postcard-header h1 {
 	width: 350px;
 	margin: 0px;
+	padding-top: 5px;
+}
+
+.postcard-body {
+	display: flex;
+}
+
+.body-left p:first-child {
+	margin-top: 0px;
+}
+
+.body-left,
+.body-right {
+	padding: 10px;
+}
+
+input {
+	border: none;
+	padding-top: 10px;
+	border-bottom: 1px grey solid;
+}
+
+p {
+	font-size: medium;
+}
+
+.postcard-footer {
+	text-align: center;
+	padding-top: 2.5px;
+}
+
+button {
+	background-color: darkgray;
+	padding: 5px 10px;
 }
